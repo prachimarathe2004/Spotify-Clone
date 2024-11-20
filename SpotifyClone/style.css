@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: #fff;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    
+    min-height: 60vh;
+  
+    box-sizing: border-box;
+    background-color: black;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   
+   
+}
+.songList {
+    flex: 1; /* Takes remaining space on the left */
+}
+
+.image-container {
+    width: 40%; /* Adjust width as needed */
+    background-image: url('bg.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vh;
+    text-align: center;
+    cursor:pointer;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+    
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    
+    color:black;
+    margin:12px 0;
+    border-radius: 34px;
+    padding: 0 15px;
+}
+.songItem img{
+    width:43px;
+    margin-right: 15px;
+    margin:0 23px ;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin:0 23px;
+
+}
+
+
+.songItem span {
+    margin-right: auto; /* Pushes timestamp and icon to the right */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between timestamp and icon */
+}
+
+.timestamp {
+    font-size: 14px;
+    color: gray;
+
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.songlistplay i {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}  
